@@ -1,0 +1,62 @@
+.fadeIn{ /*Clase*/
+    -webkit-animation-duration: 4s; /*webkit funciona para todos los navegadores*/
+    animation-duration: 4s; /*Define la duración de la animación*/
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; /*Define que se va a cumplir la regla*/
+    -webkit-animation-name: fedeIn;
+    animation-name: fadeIn; /*Define el nombre de la animación*/
+}
+
+@keyframes fadeIn{ /**/
+    from{
+        opacity: 0; /*Donde inicia*/
+    }
+    to{
+        opacity: 1; /*Donde termina*/
+    }
+}
+
+.fadeInDown{
+    -webkit-animation-duration: 1s; /*webkit funciona para todos los navegadores*/
+    animation-duration: 1s; /*Define la duración de la animación*/
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; /*Define que se va a cumplir la regla*/
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown; /*Define el nombre de la animación*/
+}
+
+@keyframes fadeInDown{
+    from{
+        opacity: 0;
+        -webkit-transform: translate3d(0,-100%,0);
+        transform: translate3d(0,-100%,0);
+    }
+    to{
+        opacity: 1;
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+
+}
+
+.fadeInUp{
+    -webkit-animation-duration: 1s; /*webkit funciona para todos los navegadores*/
+    animation-duration: 1s; /*Define la duración de la animación*/
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; /*Define que se va a cumplir la regla*/
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp; /*Define el nombre de la animación*/
+}
+
+@keyframes fadeInUp{
+    from{
+        opacity: 0;
+        -webkit-transform: translate3d(0,100%,0);
+        transform: translate3d(0,100%,0);
+    }
+    to{
+        opacity: 1;
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+}

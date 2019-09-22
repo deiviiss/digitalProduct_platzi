@@ -1,0 +1,224 @@
+/*
+#  ·················
+#  ··_______________
+#  ·/·___/·___/·___/
+#  /·/__(__··|__··)·
+#  \___/____/____/··
+#  ·················
+*/
+
+/* Font Google */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+/* ------------------------ Variables */
+:root{ /*Genera variables*/
+
+/* Colores */
+--green-color:#7ACC2D;
+--white-color:#FFFFFF;
+--black-color:#313337;
+
+/* Tipografía */
+--normal:12px;
+
+/* Espaciado */
+--space:10px;/*Variable para padding*/
+--space-2:20px;
+
+/* Box shadow */
+--box:0px 0 2px 1px #E6E5E9;
+
+}
+/* ------------------------ Variables */
+
+html, body{
+    padding: 0px; /*Margen interior*/
+    margin: 0px; /*Margen exterior*/
+    font-size: var(--normal); /*Tamaño de letra*/
+    font-family: 'Open Sans', sans-serif; /*Tipo de letra*/
+}
+
+label{
+    font-size: var(--normal);
+}
+
+nav{
+    display: flex; /*Muestra los elementos en linea */
+    background-color: var(--green-color); /*Color de fondo*/
+    padding: var(--space); 
+    color:var(--white-color); /*Color del texto*/
+    justify-content: space-between;  /* Coloca espacio entre dos elementos*/
+    align-items: center; /*Alinea elementos al centro*/
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    padding-left: var(--space-2);
+    list-style: none; /*Estilo de la lista*/
+} 
+
+nav li a{
+    color:var(--black-color);
+    text-decoration: none; /*Decoration del texto*/
+}
+
+nav li a:hover{
+    color:var(--white-color);
+}
+
+/* ------------------------ Main section */
+
+.main_section{
+    padding:15%;
+    text-align: center; /*Alinea el texto*/
+}
+
+.products{
+    background-image: url("../images/curve.png"); /*Trae una imagen de fondo*/
+    max-height: 95px; /*Tamaño del elemento*/
+    background-size: cover; /*Ocupa el tamaño del div que tiene*/
+    background-position: center top; /*Se alinea hacia el centro y hacia arriba*/
+    padding: 20%;
+    display: flex;
+}
+
+.product{
+    padding: var(--space);
+    margin-top: -226px; /*Margen superior*/    
+}
+
+.content{
+    background-color:var(--white-color);
+    border-radius: 3px;
+    padding: var(--space-2);
+    box-shadow:var(--box); /*Agrega sombra*/
+    text-align: center;
+}
+/* 
+.img_content{
+    text-align: center;
+} */
+
+.main_button{
+    background-color:var(--green-color);
+    width: 100%; /*Para ocupar todo el espacio del div*/
+    padding: var(--space);
+    font-size: var(--normal);
+    color:var(--white-color);
+    border: 0; /*Elimina el borde*/
+    cursor: pointer;/*Activa cursor al pasar mouse*/
+    border-radius: 2px; /*Redondea el borde*/
+}
+
+.main_button:hover{
+    background-color: #5E9E22;
+}
+
+/* ------------------------ Beneficios section */
+
+.beneficios{
+    display: flex;
+    padding: var(--space);
+}
+
+.beneficio{
+    padding: var(--space-2);
+    text-align: center;
+}
+
+/* .img_beneficio{
+    background: #313337;
+} */
+
+.beneficio img{
+    max-height: 100px;
+    background: #5E9E22;
+}
+
+.text_beneficio{
+    text-align: justify;
+}
+
+/* ------------------------ mentions section */
+
+h2.mention_title{
+    text-align: center;
+}
+
+.mentions{
+    display: flex;
+    padding: 5%;
+}
+
+.mention img{
+    width: 100%;
+}
+
+.mention{
+    padding: var(--space);
+}
+
+.content_mention{
+    box-shadow: 0px 0 2px 1px #E6E5E9;
+}
+
+.mention .text{
+    padding: var(--space);
+}
+
+/* ------------------------ footer */
+
+.option{
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--normal);
+    background:var(--black-color);
+    padding: var(--space);
+    color: var(--white-color);    
+}
+
+
+/* ------------------------ producto */
+
+.img_ben{
+    width: 50%;
+    justify-items: center;
+}
+
+.description{
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+
+/* ------------------------ venta */
+
+.modulo_pago{
+    background-color: var(--white-color);
+    box-shadow: var(--box);
+    padding: var(--space);
+}
+
+.modulo_pago_images{
+    max-height: 150px;
+    text-align: center;
+    margin: auto;
+}
+
+.data{
+    margin-top: var(--space);
+    margin-bottom: var(--space);
+    width: 100%;
+    height: 35px;
+    border-radius: 2px;
+    border: 1px solid var(--black-color);
+}
+
+.modulo_pago .main_button{
+    margin-top: 10px;
+}
